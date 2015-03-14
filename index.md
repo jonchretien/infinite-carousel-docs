@@ -4,8 +4,8 @@ layout: page
 
 ## Demos
 
-+ [Horizontal Carousel](/demo/horizontal/)
-+ [Vertical Carousel](/demo/vertical/)
++ [Horizontal Carousel](demo/horizontal/)
++ [Vertical Carousel](demo/vertical/)
 
 ## Download
 
