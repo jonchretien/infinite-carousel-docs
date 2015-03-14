@@ -1,0 +1,9 @@
+# Site settings
+title: Infinite Carousel
+description: "A timed infinite carousel that uses vanilla JavaScript & CSS animations."
+github_username:  jonchretien
+repo_name: infinite-carousel
+
+# Build settings
+markdown: kramdown
+permalink: pretty
