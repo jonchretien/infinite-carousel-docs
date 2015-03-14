@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Infinite Carousel</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/infinite-carousel.css">
+</head>
+
+
+  <body>
+    <div class="shell">
+
+    <header class="site-header">
+  <h1 class="site-header-title"><a href="/">Infinite Carousel</a></h1>
+  <p class="site-header-summary">A timed infinite carousel that uses vanilla JavaScript &amp; CSS animations. It supports both horizontal and vertical scrolling. Useful if you need a UI element to continuously scroll (ex: ticker being displayed on a TV monitor).</p>
+  
+    <a href="https://github.com/jonchretien/infinite-carousel/">
+      <span class="icon github">
+        <svg version="1.1" class="github-icon-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#C2C2C2" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761
+          c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32
+          c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472
+          c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037
+          C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65
+          c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261
+          c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082
+          c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129
+          c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+        </svg>
+      </span>
+    </a>
+  
+</header>
+
+
+    <div class="post">
+
+  <header class="post-header">
+    <h1></h1>
+  </header>
+
+  <article class="post-content">
+  <h2 id="demos">Demos</h2>
+
+<ul>
+  <li><a href="/demo/horizontal/">Horizontal Carousel</a></li>
+  <li><a href="/demo/vertical/">Vertical Carousel</a></li>
+</ul>
+
+<h2 id="download">Download</h2>
+
+<h3 id="css">CSS</h3>
+
+<ul>
+  <li><a href="https://github.com/jonchretien/infinite-carousel/raw/master/dist/infinite-carousel.css">infinite-carousel.css</a> <em>or</em></li>
+  <li><a href="https://github.com/jonchretien/infinite-carousel/raw/master/dist/infinite-carousel.min.css">infinite-carousel.min.css</a></li>
+</ul>
+
+<h3 id="javascript">JavaScript</h3>
+
+<ul>
+  <li><a href="https://github.com/jonchretien/infinite-carousel/raw/master/dist/infinite-carousel.js">infinite-carousel.js</a> <em>or</em></li>
+  <li><a href="https://github.com/jonchretien/infinite-carousel/raw/master/dist/infinite-carousel.min.js">infinite-carousel.min.js</a></li>
+</ul>
+
+<h2 id="usage">Usage</h2>
+
+<p>Infinite Carousel works with a container element and a set of child item elements.</p>
+
+<h3 id="markup">Markup</h3>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;infinite-carousel-shell&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;container&quot;</span> <span class="na">class=</span><span class="s">&quot;infinite-carousel-group&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;infinite-carousel-group-item&quot;</span><span class="nt">&gt;</span>1<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;infinite-carousel-group-item&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;infinite-carousel-group-item&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;infinite-carousel-group-item&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="javascript-1">JavaScript</h3>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="cm">/**</span>
+<span class="cm"> * Required arguments are:</span>
+<span class="cm"> * - a container element (string)</span>
+<span class="cm"> * - a direction (&#39;horizontal&#39; or &#39;vertical&#39;)</span>
+<span class="cm"> * - the number of items that are visible at once</span>
+<span class="cm"> */</span>
+<span class="kd">var</span> <span class="nx">infinitecarousel</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">InfiniteCarousel</span><span class="p">(</span><span class="s1">&#39;#container&#39;</span><span class="p">,</span> <span class="s1">&#39;horizontal&#39;</span><span class="p">,</span> <span class="mi">3</span> <span class="p">{</span>
+  <span class="c1">// optional options object (defaults are listed)</span>
+
+  <span class="nx">timerDuration</span><span class="o">:</span> <span class="mi">2000</span><span class="p">,</span>
+  <span class="c1">// set time between advances in milliseconds</span>
+
+  <span class="nx">transitionDuration</span><span class="o">:</span> <span class="s1">&#39;1s&#39;</span>
+  <span class="c1">// the duration of the animation</span>
+<span class="p">});</span></code></pre></div>
+
+<h2 id="browser-support">Browser Support</h2>
+
+<p>Tested in the latest versions of:</p>
+
+<ul>
+  <li>Chrome</li>
+  <li>Firefox</li>
+  <li>Opera</li>
+  <li>Safari</li>
+</ul>
+
+<h2 id="license">License</h2>
+
+<p>Infinite Carousel is released under the <a href="https://github.com/jonchretien/infinite-carousel/blob/master/LICENSE.txt">MIT license</a>.</p>
+
+  </article>
+
+</div>
+
+    <footer class="site-footer">
+  <p class="pull-left">Copyright <a href="http://jonchretien.com/">Jon Chretien</a> <script>document.write(new Date().getFullYear());</script>.  All rights reserved.</p>
+  <p class="pull-right">View the project on <a href="https://github.com/jonchretien/infinite-carousel/">Github</a>.</p>
+</footer>
+
+    </div><!-- /.shell -->
+
+  </body>
+</html>
