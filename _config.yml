@@ -1,8 +1,14 @@
-# Site settings
+# Setup
 title: Infinite Carousel
 description: "A timed infinite carousel that uses vanilla JavaScript & CSS animations."
+repo_url: https://jonchretien.github.io/infinite-carousel-docs/
+base_url: /infinite-carousel-docs/
 github_username:  jonchretien
 repo_name: infinite-carousel
+
+# Author
+author_name: "Jon Chretien"
+author_url: "http://jonchretien.com/"
 
 # Build settings
 markdown: kramdown
