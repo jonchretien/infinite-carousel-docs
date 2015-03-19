@@ -2,7 +2,7 @@
 title: Infinite Carousel
 description: "A timed infinite carousel that uses vanilla JavaScript & CSS animations."
 repo_url: https://jonchretien.github.io/infinite-carousel-docs/
-base_url: /infinite-carousel-docs/
+baseurl: /infinite-carousel-docs/
 github_username:  jonchretien
 repo_name: infinite-carousel
 
