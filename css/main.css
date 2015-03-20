@@ -223,18 +223,6 @@ strong {
 }
 
 /*
- * Component: SVG Icons
- */
-
-.github-icon-svg {
-  display: inline-block;
-  width: 23px;
-  height: 23px;
-  position: relative;
-  top: 4px;
-}
-
-/*
  * Component: Code Highlighter
  */
 
